@@ -1,0 +1,90 @@
+:root {
+    --background-main: #f5f5dc;
+    --background-light-pink: #fff0f5;
+    --background-light-yellow: #fffacd;
+    --text-color: #000;
+    --text-light: #a8b2d1;
+    --button-hover: #333;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-main);
+    color: var(--text-color);
+}
+
+.countdown-container {
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    background: var(--background-light-pink);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.time-box {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 20px;
+    background: var(--background-light-yellow);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.time-box span {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.time-box:not(:last-child)::after {
+    content: '|';
+    margin-left: 15px;
+}
+
+#date-form {
+    margin-top: 25px;
+    background-color: var(--background-main);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--text-color);
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+.attribution {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.attribution span {
+    color: var(--text-color);
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etkinlik Geri Sayımı</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <section class="countdown-container">
+        <h1>Etkinlik Geri Sayımı</h1>
+        <div id="countdown">
+            <div class="time-box"><span id="days">00</span>Gün</div>
+            <div class="time-box"><span id="hours">00</span>Saat</div>
+            <div class="time-box"><span id="minutes">00</span>Dakika</div>
+            <div class="time-box"><span id="seconds">00</span>Saniye</div>
+        </div>
+        <form id="date-form">
+            <input type="date" id="event-date" name="event-date" required>
+            <input type="time" id="event-time" name="event-time" step="1" required>
+            <button type="submit">Tarihi Ayarla</button>
+        </form>
+    </section>
+    <footer class="attribution">Created by <span>Hibe</span></footer>
+</body>
+</html>
